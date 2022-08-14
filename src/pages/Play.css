@@ -1,0 +1,38 @@
+.Main{
+    border: 1px solid #414141;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+input{
+    height: 40px;
+    margin:auto;
+    width: 150px;
+}
+input:focus-visible{
+    outline: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    margin-top: 30px;
+    height: 60px;
+    width: 150px;
+}
+
+p{
+    height: 150px;
+}

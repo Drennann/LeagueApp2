@@ -1,0 +1,20 @@
+button{
+    margin: auto;
+    height: 70px;
+    width: 200px;
+    font-size: 21px;
+    border: 1px solid #414141;
+    border-radius: 5%;
+}
+
+.Home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    color: #1db954;
+    border-color: #1db954;
+}
