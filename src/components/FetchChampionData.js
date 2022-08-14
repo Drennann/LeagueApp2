@@ -8,11 +8,11 @@ export default function FetchChampionData({setChampionSelected, championGuessed}
 
     useEffect(()=>{
         (async ()=>{
-            let data = await fetch("http://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion.json");
+            let data = await fetch("https://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion.json");
             data = await data.json();
             let championsNameList = Object.keys(data.data);
             let championRandom = Object.keys(data.data)[Math.floor(Math.random()*championsNameList.length)];
-            let championRandomData = await fetch(`http://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion/${championRandom}.json`);
+            let championRandomData = await fetch(`https://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion/${championRandom}.json`);
             championRandomData = (await championRandomData.json()).data[championRandom];
             setSpell(championRandomData.spells[Math.floor(Math.random()*4)].id)
             setDescription(championRandomData.title);

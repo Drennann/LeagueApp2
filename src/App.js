@@ -6,6 +6,7 @@ import Play from "./pages/Play"
 function App() {
   return (
     <Routes>
+      <Route path="/LeagueApp2" element={<Home/>}></Route>
       <Route path="/home" element={<Home/>}></Route>
       <Route path="/play" element={<Play/>}></Route>
     </Routes>
